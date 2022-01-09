@@ -37,7 +37,7 @@ To run the virtual environment run:
 Unix:
 `. venv/bin/activate`  
 Windows:
-`venv/Scripts/activate`  
+`.\venv\Scripts\activate`  
 
 Then, run `pip install -r requirements.txt` to install the required dependencies.  
 Run `flask run` to start the Flask server.

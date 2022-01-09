@@ -22,6 +22,7 @@ A new window will pop out and allow the user to download the CSV file.
 Node.js and Python3 need to be installed.  
 There are set up instructions for both the back-end (Flask) and front-end (Angular).
 
+First clone the Github repo.  
 ### Flask Setup
 In the project directory, run:  
 ```bash

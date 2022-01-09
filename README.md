@@ -15,7 +15,7 @@ Can edit a specific item's price and stock.
 Can delete an item.  
 Can add a new item. 
 
-The additional feature is pushing a button export product data to a CSV.  
+The additional feature is pushing a button to export product data to a CSV.  
 A new window will pop out and allow the user to download the CSV file. 
 
 ## Setup Instructions

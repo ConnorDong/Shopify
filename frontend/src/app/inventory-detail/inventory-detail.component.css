@@ -1,0 +1,9 @@
+
+.items div.selected {
+    color: red;
+  }
+.column {
+    float: left;
+    font-size: 1.5rem;
+    width: 33.33%;
+  } 

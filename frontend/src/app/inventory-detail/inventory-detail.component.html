@@ -1,0 +1,51 @@
+<!-- <div class = "centered-content">
+    <div class = "task-manager-container">
+        <div class="task" *ngFor="let inventory of list_inventory">     
+            <div class="task-text">
+                <div class="column">{{inventory.name}}</div>
+                <div class="column">${{inventory.price}}</div>
+                <div class="column">${{inventory.stock}}</div>
+              
+            </div>
+            <div class="task-buttons">
+                <button class="button is-danger"  style="margin-left: 10px;">
+                  <div class="icon">
+                    <i class="fas fa-trash"></i>
+                  </div>
+                </button>
+        
+            </div>
+        </div>
+    </div>
+
+</div> -->
+<div class="items"style="margin: auto; width: 50%;">
+    <h2 style="text-align: center;">Inventory Items</h2>
+    <div style="text-align: center;">
+        <div class="column"><h5>name</h5></div>
+        <div class="column"><h5>price</h5></div>
+        <div class="column"><h5>stock</h5></div>
+    </div>
+    <div *ngFor="let inventory of list_inventory" (click)="onSelect(inventory)" [class.selected]="inventory === selectedInventory">     
+        <div style="text-align: center;">
+            
+            <div class="column">{{inventory.name}}</div>
+            <div class="column">${{inventory.price}}</div>
+            <div class="column">{{inventory.stock}}</div>
+          
+        </div>
+    </div>
+    <button routerLink="/new-inventory">Add Item</button>
+    <button (click)="deleteInventory()">Delete</button>
+    <br><br>
+
+
+    <input #price placeholder="new price"><br>
+    <input #stock placeholder="new stock">
+    <button (click)="editInventory(price.value, stock.value)">Edit</button>
+    <br><br>
+    <button (click)="getCSV()">Get CSV</button>
+</div>
+
+
+    

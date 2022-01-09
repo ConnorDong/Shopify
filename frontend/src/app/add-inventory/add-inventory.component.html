@@ -1,0 +1,10 @@
+
+<div class="items"style="margin: auto; width: 50%;">
+    <input #nameInput type="text" placeholder="Inventory Item Name">
+    <br>
+    <input #priceInput type="text" placeholder="Inventory Item Price">
+    <br>
+    <input #stockInput type="text" placeholder="Inventory Item Stock">
+    <br>
+    <button (click)="createInventory(nameInput.value, priceInput.value, stockInput.value)">Add</button>
+</div>

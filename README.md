@@ -46,7 +46,14 @@ In the project directory, run:
 ```bash
 cd frontend
 npm install -g @angular/cli
+npm install
 ng serve --open
+```
+
+Newer versions of node may run into the error 'ERR_OSSL_EVP_UNSUPPORTED'.  
+Before running  ```ng serve --open``` run:
+```bash
+export NODE_OPTIONS=--openssl-legacy-provider
 ```
 This will start the Angular server at http://localhost:4200/ to view in dev mode.  
 This is a very simple UI since the problem was back-end focused.  

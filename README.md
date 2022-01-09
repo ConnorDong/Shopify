@@ -3,7 +3,7 @@ Shopify 2022 Summer Backend
 
 FullStack Application using: Angular, Flask, and a local SQLite db.  
 I chose this stack for its ease of installation and development.   
-The application is well-tested with unit tests, in the Testing Section.
+The application is tested with unit tests, in the Testing Section.
 
 
 ## Features

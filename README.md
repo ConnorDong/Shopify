@@ -26,11 +26,15 @@ There are set up instructions for both the back-end (Flask) and front-end (Angul
 In the project directory, run:  
 ```bash
 cd api
-python -m venv venv
+python -m venv venv 
+```
+You may need to run the command below if multiple versions of python are installed
+``` 
+python3 -m venv venv 
 ```  
 To run the virtual environment run:  
 Unix:
-`source venv/bin/activate`  
+`. venv/bin/activate`  
 Windows:
 `venv/Scripts/activate`  
 
